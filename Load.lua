@@ -8,7 +8,7 @@ task.spawn(function()
         if tostring(method) == "InvokeServer" then
             if tostring(args[1]) == "SkillAction" then
                 if (args[3]) then
-                    if args[3]["MouseHit"] and (_G.Settings.AutoFarmLevel or _G.Settings.AutoSeaKing or _G.Settings.AutoHydra or _G.Settings.AutoGhostShip or _G.Settings.AutoFarmBosses or _G.Settings.AutoFindItems or _G.Settings.AutoFarmPlayers or _G.Settings.AimbotSkills) and MobP then
+                    if args[3]["MouseHit"] and (_G.Settings.AutoFarmLevel or _G.Settings.AutoSeaKing or _G.Settings.AutoHydra or _G.Settings.AutoGhostShip or _G.Settings.AutoFarmBosses or _G.Settings.AutoFindItems or _G.Settings.AutoFarmPlayers or _G.Settings.AimbotSkills or _G.Settings.AutoFarmDungeon) and MobP then
                         pcall(function()
                             args[3]["MouseHit"] = MobP
                             return old(unpack(args))
